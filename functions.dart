@@ -29,6 +29,10 @@ main(){
   var f=getExpression2(3,4);
   print(f);
 
+  //FAT Arrow
+  getArrow(int q,int w)=>(q*w)+10;
+  var x=getArrow(3, 4);
+  print(x*2);
 
   //optional parameters
   getNum(int s,[int d=10]){
