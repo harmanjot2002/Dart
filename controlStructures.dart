@@ -20,6 +20,19 @@ main(){
     print('wrong');
   else
     print('None');
+
+  var newName='Vishal';
+  switch(newName){
+    case 'Vishal':
+      print("right");
+      break;
+    case 'Amit':
+      print('wrong');
+      break;
+    default:
+      print('no');
+  }
 }
 
+//Switch case reduces complexity and increases readablity of code by directly switching to required case.
 
