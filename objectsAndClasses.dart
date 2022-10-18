@@ -22,6 +22,7 @@ main(){
   obj.fun1();
   print(obj.name);
 
+
   var obj2=new class2();
   obj2.newName='Vishal';
   print(obj2.newName);
