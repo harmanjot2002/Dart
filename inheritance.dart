@@ -1,7 +1,7 @@
 /*
-Inheritance means accessing property from parent class.
-It helps in increasing reusability of code.
-Dart has no concept of private and pulic members.
+  Inheritance means accessing property from parent class.
+  It helps in increasing reusability of code.
+  Dart has no concept of private and pulic members.
 */
 
 class parent{
