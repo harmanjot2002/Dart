@@ -2,7 +2,6 @@
 1.Functions are used to increase reusability of code.
 2.In dart,functions always return something,if we have not returned,then default is null.
 */
-
 main(){
   getNumber(){
     print("Hello");
