@@ -1,5 +1,4 @@
 import 'dart:io';
-
 void main(){
   //JIT-Just In Time-at run time
   //AOT-Ahead Of Time-compile time
@@ -126,6 +125,7 @@ assert(piAsString == '3.14');
     print(num); // output: null
   */
 
+/*
   int num = 10 + 22;
   num = num - 2;
   print(num);
@@ -152,4 +152,12 @@ assert(piAsString == '3.14');
   if (num != 100) {
     print('num is not equal to 100');
   }
+
+*/
+
+
+  //Ternary Operator
+  int x = 100;
+  var result = x % 2 == 0 ? 'Even' :'Odd';
+  print(result);
 }
