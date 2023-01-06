@@ -155,9 +155,10 @@ assert(piAsString == '3.14');
 
 */
 
-
+/*
   //Ternary Operator
   int x = 100;
   var result = x % 2 == 0 ? 'Even' :'Odd';
   print(result);
+*/
 }
