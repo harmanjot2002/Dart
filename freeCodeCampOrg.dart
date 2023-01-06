@@ -264,5 +264,8 @@ assert(piAsString == '3.14');
 */
  
   //Set
-  
+  var halogens={'flourine','chlorine','flourine'};
+  for(var x in halogens){
+    print(x);
+  }
 }
