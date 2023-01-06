@@ -163,10 +163,11 @@ assert(piAsString == '3.14');
 */
 
   //Type Test
-  var x=100.;
+  var x=100;
   if(x is int){
     print("Integer");
   }
 
   //Conditional Statement
+
 }
