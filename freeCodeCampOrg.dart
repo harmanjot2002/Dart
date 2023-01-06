@@ -263,6 +263,7 @@ assert(piAsString == '3.14');
   }
 */
  
+ /*
   //Set(Unique collection of items)
   var halogens={'flourine','chlorine','flourine'};
   for(var x in halogens){
@@ -275,5 +276,9 @@ assert(piAsString == '3.14');
   Set <String> halo2={};
   print(halo1.runtimeType);
   print(halo2.runtimeType);
+*/
 
+
+  //Map
+  
 }
