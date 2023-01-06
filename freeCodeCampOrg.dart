@@ -4,7 +4,7 @@ void main(){
   //JIT-Just In Time-at run time
   //AOT-Ahead Of Time-compile time
 
-
+/*
   var firstName = 'Mahmud'; // String type inference
   String lastName = 'Ahsan'; // String type defined
   int number = 100; // integer type
@@ -14,11 +14,13 @@ void main(){
   print(number);
   print(cost);
   print(isOkay);
+*/
 
-
+/*
   stdout.writeln('What is your name: ?');
   String? name = stdin.readLineSync();
   print('My name is: $name');
+*/
 
   /*
     Simple or Primitive Data Types
@@ -28,6 +30,7 @@ void main(){
       bool
       dynamic
   */
+/*
   int amount1 = 100;
   var amount2 = 200;
   print('Amount1: $amount1 | Amount2: $amount2 \n');
@@ -44,6 +47,20 @@ void main(){
   print('WeakVariable 1: $weakVariable \n');
   weakVariable = 'Dart Programming';
   print('WeakVariable 2: $weakVariable');
+*/
 
-  
+/*
+  var name13 = 'Jack'; // type inference made this as String
+  print(name13);
+  // name = 100; // Will show error here
+  // print(name);
+  int age1 = 30;
+  print(age1);
+
+  var weakType; // dynamic
+  weakType = 'Jack';
+  print(weakType);
+  weakType = 100;
+  print(weakType);
+*/
 }
