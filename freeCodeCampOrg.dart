@@ -1,5 +1,6 @@
 import 'dart:io';
 
+/*
 //Classes
 class Person {
   var name;
@@ -66,6 +67,7 @@ class Car extends Vehicle {
       return val * val + 2;
     }
   }
+*/
 
 void main(){
   //JIT-Just In Time-at run time
@@ -406,6 +408,7 @@ assert(piAsString == '3.14');
   }
 */
 
+/*
   //Classes
  var person1 = Person('Jack');
   Person person2 = Person('Jill', 15);
@@ -422,6 +425,11 @@ assert(piAsString == '3.14');
   var obj = Y('Jack');
   obj.showOutput();
   print(obj.square(2));
+}
+*/
+
+
+
 }
 /*
   dynamic sum(var num1, var num2) => num1 + num2;
