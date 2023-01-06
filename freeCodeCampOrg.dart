@@ -104,7 +104,7 @@ String piAsString = 3.14159.toStringAsFixed(2);
 assert(piAsString == '3.14');
 */
 
-
+/*
 //Constant and Final
 //Constant is a compile time constant value and final variable can be set only once.
   const aConstNum = 0; // int constant
@@ -118,4 +118,7 @@ assert(piAsString == '3.14');
   print(aConstString.runtimeType);
   final amount = 5;
   print(amount);
+*/
+
+   
 }
