@@ -263,9 +263,12 @@ assert(piAsString == '3.14');
   }
 */
  
-  //Set
+  //Set(Unique collection of items)
   var halogens={'flourine','chlorine','flourine'};
   for(var x in halogens){
     print(x);
   }
+
+  var halo={};//This becomes a linked hashmap instead of set.
+  print(halo.runtimeType);
 }
