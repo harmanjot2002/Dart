@@ -312,9 +312,20 @@ assert(piAsString == '3.14');
   showOutput(square(2));
   showOutput(square(2.5));
   print(square.runtimeType);
-*/
+
+  //Anonymous Function:A nameless function called an anonymous function, or sometimes a lambda or closure.
   var list=['apples','bananas','oranges'];
-}
+  list.forEach((item) {
+    print(item);
+  });
+*/
+
+//Parameter
+//Positional and Named Parameter
+//Positional arguments works like other language starting from left.
+  print(sum(2, 2));
+// For Named parameter, whe have to use {} outside the named parameter within a function signature.
+  print(sumName(num1: 2, num2: 2));
 
 /*
 //Functions
@@ -322,8 +333,11 @@ assert(piAsString == '3.14');
 //   return num*num;
 // }
 dynamic square(var num)=>num*num;
-
 void showOutput(var msg){
   print(msg);
 }
 */
+}
+
+dynamic sum(var num1, var num2) => num1 + num2;
+dynamic sumName({var num1, var num2}) => num1 + num2;
