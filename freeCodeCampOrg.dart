@@ -196,14 +196,26 @@ assert(piAsString == '3.14');
   }
 */
 
-//Loops
-for (var i = 0; i < 10; ++i) {
-  print(i);
-}
-var numbers = [1, 2, 3];
-for (var n in numbers) {
-  print(n);
-}
-numbers.forEach((num) => print(num));
+  //Loops
+  for (var i = 0; i < 10; ++i) {
+    print(i);
+  }
 
+  var numbers = [1, 2, 3];
+  for (var n in numbers) {
+    print(n);
+  }
+
+  numbers.forEach((num) => print(num));
+
+  int num = 5;
+  while (num > 0){ 
+    print(num);
+    num -= 1;
+  }
+
+   do {
+    print(num);
+    num -= 1;
+  } while(num > 0);
 }
