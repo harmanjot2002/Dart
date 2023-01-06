@@ -278,7 +278,7 @@ assert(piAsString == '3.14');
   print(halo2.runtimeType);
 */
 
-
+/*
   //Map
   // Dart infers that gifts has the type Map<String, String> and nobleGases has the type Map<int, String>.
   var gifts = {
@@ -287,19 +287,23 @@ assert(piAsString == '3.14');
     'second': 'turtledoves',
     'fifth': 'golden rings'
   };
+  print(gifts['fifth']);
   var nobleGases = {
     2: 'helium',
     10: 'neon',
     18: 'argon',
   };
+  print(nobleGases[18]);
   // You can create the same objects using a Map constructor:
   var gifts1 = Map();
   gifts1['first'] = 'partridge';
   gifts1['second'] = 'turtledoves';
   gifts1['fifth'] = 'golden rings';
-
+  print(gifts1['first']);
   var nobleGases1 = Map();
   nobleGases1[2] = 'helium';
   nobleGases1[10] = 'neon';
   nobleGases1[18] = 'argon';
+  print(nobleGases1[18]);
+*/
 }
