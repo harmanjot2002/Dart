@@ -231,7 +231,36 @@ assert(piAsString == '3.14');
   }
 */
 
-//List
-
-
+//Collections:
+  // 1.List
+  // 2.Set
+  // 3.Map
+  
+/*
+  //List
+  List names = ['Jack', 'Jill'];
+  print(names[0]);
+  print(names.length);
+  for (var n in names) {
+    print(n);
+  }
+  List <int> ages = [18, 20, 33];
+  for (var a in ages) {
+    print(a);
+  }
+  List <String> names21=['Jack','Jill'];
+  var names212=names21;//This is not making separate copy of names212,rather it is simply referencing to list names21.
+  names212[1]='Mark';
+  for(var n in names21){
+    print(n);
+  }
+  //To make copy of list,we use pread operator.
+  List <String> names21=['Jack','Jill'];
+  var names212=[...names21];
+  names21[1]='Mark';
+  for(var n in names212){
+    print(n);
+  }
+*/
+ 
 }
