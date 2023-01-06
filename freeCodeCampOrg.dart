@@ -280,5 +280,26 @@ assert(piAsString == '3.14');
 
 
   //Map
-  
+  // Dart infers that gifts has the type Map<String, String> and nobleGases has the type Map<int, String>.
+  var gifts = {
+    // Key:    Value
+    'first': 'partridge',
+    'second': 'turtledoves',
+    'fifth': 'golden rings'
+  };
+  var nobleGases = {
+    2: 'helium',
+    10: 'neon',
+    18: 'argon',
+  };
+  // You can create the same objects using a Map constructor:
+  var gifts1 = Map();
+  gifts1['first'] = 'partridge';
+  gifts1['second'] = 'turtledoves';
+  gifts1['fifth'] = 'golden rings';
+
+  var nobleGases1 = Map();
+  nobleGases1[2] = 'helium';
+  nobleGases1[10] = 'neon';
+  nobleGases1[18] = 'argon';
 }
