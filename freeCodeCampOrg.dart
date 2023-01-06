@@ -272,6 +272,8 @@ assert(piAsString == '3.14');
   var halo={};//Onlly curly brackets becomes a linked hashmap instead of set.
   print(halo.runtimeType);
   var halo1=<String>{};//This now becomes a hashset,not hashmap.
+  Set <String> halo2={};
   print(halo1.runtimeType);
+  print(halo2.runtimeType);
 
 }
