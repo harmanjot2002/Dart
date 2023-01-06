@@ -63,4 +63,47 @@ void main(){
   weakType = 100;
   print(weakType);
 */
+
+/*
+  var s1 = 'Single quotes work well for string literals.';
+  var s2 = "Double quotes work just as well.";
+  var s3 = 'It\'s easy to escape the string delimiter.';
+  var s4 = "It's even easier to use the other delimiter.";
+  print(s1);
+  print(s2);
+  print(s3);
+  print(s4);
+  //You can create a “raw” string by prefixing it with r:
+  var s = r'In a raw string, not even \n gets special treatment.';
+  print(s);
+  //String Interpolation
+  var age = 35;
+  var str = 'My age is: $age';
+  print(str);
+  //Multiline String
+  var s11 = '''
+  You can create
+  multi-line strings like this one.
+  ''';
+  print(s11);
+  var s21 = """This is also a
+  multi-line string.""";
+  print(s21);
+//Type Conversion
+  // String -> int
+var one = int.parse('1');
+assert(one == 1);
+// String -> double
+var onePointOne = double.parse('1.1');
+assert(onePointOne == 1.1);
+// int -> String
+String oneAsString = 1.toString();
+assert(oneAsString == '1');
+// double -> String
+String piAsString = 3.14159.toStringAsFixed(2);
+assert(piAsString == '3.14');
+*/
+
+
+
 }
