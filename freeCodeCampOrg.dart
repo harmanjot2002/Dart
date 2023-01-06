@@ -1,4 +1,72 @@
 import 'dart:io';
+
+//Classes
+class Person {
+  var name;
+  var age;
+ // default constructor
+  Person(String name, [int age = 18]) {
+    this.name = name;
+    this.age = age;
+  }
+  // named constructor
+  Person.guest() {
+    name = 'Guest';
+    age = 18;
+  }
+  void showOutput() {
+    print(name);
+    print(age);
+  }
+}
+
+//Inheritance
+class Vehicle {
+  String model;
+  int year;
+  Vehicle(this.model, this.year) {
+    print(this.model);
+    print(this.year);
+  }
+  void showOutput(){
+    print(model);
+    print(year);
+  }
+}
+
+class Car extends Vehicle {
+  double price;
+  Car(String model, int year, this.price) : super(model, year);
+  void showOutput() {
+    super.showOutput();
+    print(this.price);
+  }
+}
+
+  //Overriding
+  class X {
+    String name;
+    X(this.name);
+    void showOutput() {
+      print(this.name);
+    }
+    dynamic square(dynamic val) {
+      return val * val;
+    }
+  }
+  class Y extends X {
+    Y(String name) : super(name);
+    @override
+    void showOutput() {
+      print(this.name);
+      print('Hello');
+    }
+    // not using @override at this time
+    dynamic square(dynamic val) {
+      return val * val + 2;
+    }
+  }
+
 void main(){
   //JIT-Just In Time-at run time
   //AOT-Ahead Of Time-compile time
@@ -323,21 +391,39 @@ assert(piAsString == '3.14');
 //Parameter
 //Positional and Named Parameter
 //Positional arguments works like other language starting from left.
-  print(sum(2, 2));
+  // print(sum(2, 2));
 // For Named parameter, whe have to use {} outside the named parameter within a function signature.
-  print(sumName(num1: 2, num2: 2));
+  // print(sumName(2, num2: 3));
 
 /*
-//Functions
-// dynamic square(var num){
-//   return num*num;
-// }
-dynamic square(var num)=>num*num;
-void showOutput(var msg){
-  print(msg);
-}
+  //Functions
+  // dynamic square(var num){
+  //   return num*num;
+  // }
+  dynamic square(var num)=>num*num;
+  void showOutput(var msg){
+    print(msg);
+  }
 */
-}
 
-dynamic sum(var num1, var num2) => num1 + num2;
-dynamic sumName({var num1, var num2}) => num1 + num2;
+  //Classes
+ var person1 = Person('Jack');
+  Person person2 = Person('Jill', 15);
+  person1.showOutput();
+  person2.showOutput();
+  var person3 = Person.guest();
+  person3.showOutput();
+
+  //Inheritance
+  var car1 = Car('Accord', 2014, 150000);
+  car1.showOutput();
+
+  //Overriding
+  var obj = Y('Jack');
+  obj.showOutput();
+  print(obj.square(2));
+}
+/*
+  dynamic sum(var num1, var num2) => num1 + num2;
+  dynamic sumName(var num1, {var num2}) => num1 + (num2 ?? 0);
+*/
